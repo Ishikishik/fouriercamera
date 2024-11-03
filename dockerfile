@@ -5,7 +5,7 @@ FROM jupyter/datascience-notebook:latest
 RUN pip install opencv-python
 RUN pip install matplotlib
 RUN pip install ortoolpy
-
+RUN pip install networkx
 # 他にも必要な設定があればここに追加
 # 例: システムパッケージのインストール
 # RUN apt-get update && apt-get install -y <必要なパッケージ>
