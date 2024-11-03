@@ -2,7 +2,9 @@
 FROM jupyter/datascience-notebook:latest
 
 # 必要なPythonライブラリをインストールする
-RUN pip install tensorflow pillow pyheif
+RUN pip install opencv-python
+RUN pip install matplotlib
+RUN pip install ortoolpy
 
 # 他にも必要な設定があればここに追加
 # 例: システムパッケージのインストール
